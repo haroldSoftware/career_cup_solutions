@@ -39,7 +39,7 @@ const isUniqueFuncs = {
   isUnique_03(str) {
     let mirror = {};
     for (let i = 0; i < str.length; i++) {
-      if (mirror[str[i]] && mirror[str[i]] >= 1) {
+      if (mirror[str[i]] && mirror[str[i]] === 1) {
         return false;
       } else {
         mirror[str[i]] = 1;
